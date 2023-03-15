@@ -1,23 +1,32 @@
-import logo from './logo.svg';
+import { useState, useEffect } from 'react';
+
+import { getPostList } from './api/api';
+
+import { Post } from './components/Post';
+
 import './App.css';
 
+const BASE_ID = 'appTtQHjDfHLvVyP7';
+const TABLE_ID = 'tblxOVEoPwe23DCdB';
+
 function App() {
+  const [postList, setPostList] = useState([]);
+
+  useEffect(() => {
+    (async () => {
+      const { data } = await getPostList(`${BASE_ID}/${TABLE_ID}`)
+
+      setPostList(data || []);
+    })()
+  }, []);
+
+  console.log(postList)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {postList.records && postList.records.map((value, index) => (
+        <Post key={index} data={value.fields} />
+      ))}
     </div>
   );
 }
