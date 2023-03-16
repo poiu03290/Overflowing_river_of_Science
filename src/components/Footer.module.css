@@ -1,0 +1,27 @@
+.nav-bar {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+    padding: 2.25em 0;
+}
+
+.inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1680px;
+    margin: 0 auto;
+}
+
+.nav-bar a {
+    font-size: 1.125rem;
+    padding: 0 2em;
+}
+
+.nav-bar ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-bar ul li a {
+    font-size: 0.75rem;
+}

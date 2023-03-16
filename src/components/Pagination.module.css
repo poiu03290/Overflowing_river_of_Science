@@ -1,0 +1,12 @@
+.container button {
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    margin: 0 8px;
+    border: none;
+    background: none;
+}
+
+.current {
+    color: red;
+}

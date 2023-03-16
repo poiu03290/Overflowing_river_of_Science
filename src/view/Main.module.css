@@ -1,0 +1,30 @@
+.container {
+    width: 100%;
+    padding: 3em 0;
+}
+
+.inner {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-post {
+    display: inline-block;
+    padding: 18px 40px;
+    background-color: #0085A1;
+    color: #fff;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

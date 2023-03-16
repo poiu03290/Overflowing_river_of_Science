@@ -1,0 +1,40 @@
+.container {
+    width: 100%;
+    padding: 4em 0;
+    font-family: 'Lora', serif;
+}
+
+.inner {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 3rem;
+    line-height: 72px;
+    margin-bottom: 0.75em;
+}
+
+.paragraph {
+    margin-top: 2em;
+    font-size: 1.25rem;
+}
+
+.container img {
+    width: 100%;
+}
+
+.categorybox {
+    display: flex;
+    justify-content: center;
+}
+
+.category {
+    display: inline-block;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1.5em;
+    background-color: #c4c4c4;
+    border-radius: 25px;
+    padding: 0.4em 1.2em;
+}

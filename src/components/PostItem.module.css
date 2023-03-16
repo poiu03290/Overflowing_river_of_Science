@@ -1,0 +1,32 @@
+.item {
+    margin: 2em 0;
+}
+.item:hover {
+    color: #0085A1;
+}
+
+.title {
+    font-size: 2.25rem;
+    font-family: 'Lora', serif;
+    font-weight: 800;
+    margin-bottom: 0.5em;
+}
+
+.paragraph {
+    margin-top: 0.75em;
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.division {
+    margin: 4.5em auto;
+    width: 65%;
+    border-bottom: 1px solid #C4C4C4;
+}
+
+.item img {
+    width: 100%;
+}

@@ -1,0 +1,72 @@
+.nav-bar {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+    padding: 1.5em 0;
+}
+
+.inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1680px;
+    margin: 0 auto;
+}
+
+.nav-bar a {
+    font-size: 1.25rem;
+    padding: 0 2em;
+    color: #fff;
+}
+
+.nav-bar ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-bar ul li a {
+    font-size: 0.875rem;
+}
+
+.change a {
+    color: black;
+}
+
+.header {
+    background: no-repeat url('../assets/StockSnap_M6D1GS9PSL.jpg') ;
+    width: 100%;
+    height: 600px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-image: linear-gradient(to bottom,rgba(0,0,0,.2) 0,rgba(0,0,0,.5) 100%);
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    z-index: 2;
+}
+
+.title h1 {
+    font-size: 3.75rem;
+    font-weight: 900;
+}
+
+.title p {
+    font-size: 1.5rem;
+}

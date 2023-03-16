@@ -1,8 +1,11 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import { getPostList } from '../api/api';
 
-import { Post } from './Post';
+import { PostItem } from '../components/PostItem';
+
+import styles from './Main.module.css';
 
 export const Main = () => {
     const [postList, setPostList] = useState([]);
@@ -15,14 +18,18 @@ export const Main = () => {
       })()
     }, []);
   
-    console.log(postList)
-  
     return (
-      <div>
-        {postList.records && postList.records.map((value, index) => (
-          <Post key={index} data={value.fields} />
-        ))}
-        Main
-      </div>
+      <main className={styles.container}>
+        <div className={styles.inner}>
+          {postList.records && postList.records.map((value, index) => (
+            index < 3 ? <PostItem key={index} data={value} /> : undefined
+          ))}
+          <div className={styles.wrapper}>
+            <Link to={'/post'} className={`${styles['btn-post']}`}>
+              OTHER POSTS
+            </Link>
+          </div>
+        </div>
+      </main>
     );
 }
