@@ -1,0 +1,54 @@
+@keyframes modal-bg-show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.open {
+    display: block;
+    animation: modal-bg-show 0.3s;
+}
+
+.bar {
+    height: 100%;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fff;
+    font-size: 1.125rem;
+    z-index: 3;
+    position: absolute;
+    top: 0; bottom: 0; right: 0;
+}
+
+.bar div {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.125em;
+}
+
+.bar nav ul li {
+    margin: 30px;
+    cursor: pointer;
+}
+
+.Xicon {
+    cursor: pointer;
+}
+
+.blind {
+    display: none;
+}
