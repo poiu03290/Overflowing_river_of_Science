@@ -4,7 +4,6 @@
 
 [프로젝트 바로가기](http://overflowingscience.site/)
 
-<br />
 
 ### 소개
 
@@ -116,7 +115,7 @@ Allow: /
 
 ![](https://velog.velcdn.com/images/poiu0329/post/0b91a6c7-b15d-4a7b-b4ce-69301e08dc39/image.png)
 
-[관련 정리 글](https://velog.io/@poiu0329/HTML-SEO-%EA%B2%80%EC%83%89-%EC%97%94%EC%A7%84-%EC%B5%9C%EC%A0%81%ED%99%94SEO%EC%97%90-%EB%8C%80%ED%95%B4%EC%84%9C)
+[SEO에 관련해서 블로그에 정리했습니다.(클릭)](https://velog.io/@poiu0329/HTML-SEO-%EA%B2%80%EC%83%89-%EC%97%94%EC%A7%84-%EC%B5%9C%EC%A0%81%ED%99%94SEO%EC%97%90-%EB%8C%80%ED%95%B4%EC%84%9C)
 
 <br />
 
@@ -124,6 +123,11 @@ Allow: /
 ![](https://velog.velcdn.com/images/poiu0329/post/dc4936e3-4911-4b13-851a-21c967a31951/image.gif)
 
 모바일에서도 이용자가 UI에 불편하지 않도록 구현했습니다.
+
+다음 링크를 통해 웹 사이트가 모바일 친화적인지를 테스트 해 볼 수가 있습니다.
+https://search.google.com/test/mobile-friendly?hl=ko
+
+![](https://velog.velcdn.com/images/poiu0329/post/77773547-ad3e-4f14-a055-43eea759e192/image.png)
 
 <br />
 
@@ -320,6 +324,7 @@ export const Header = () => {
 
 ![](https://velog.velcdn.com/images/poiu0329/post/40c579a6-bdcf-43d7-9d1e-bdf4501a0e13/image.gif)
 
+<br />
 
 ## 마무리
 
