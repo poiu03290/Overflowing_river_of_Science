@@ -60,6 +60,7 @@
     font-family: 'Open Sans', sans-serif;
     color: #fff;
     z-index: 2;
+    padding: 0 1.5em;
 }
 
 .title h1 {
@@ -69,4 +70,76 @@
 
 .title p {
     font-size: 1.5rem;
+}
+
+.icon {
+    display: none;
+}
+
+.bar {
+    height: 100%;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fff;
+    font-size: 1.125rem;
+    z-index: 3;
+}
+
+.bar div {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.125em;
+}
+
+.bar nav ul li {
+    margin: 30px;
+    cursor: pointer;
+}
+
+.Xicon {
+    cursor: pointer;
+}
+
+.blind {
+    display: none;
+}
+
+
+@media screen and (max-width: 1023px) {
+    .nav-bar a {
+        font-size: 1rem;
+    }
+
+    .nav-bar ul li a {
+        font-size: 0.75rem;
+    }
+
+    .title h1 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .nav-bar a {
+        font-size: 1rem;
+    }
+
+    .nav-bar ul li a {
+        display: none;
+    }
+
+    .icon {
+        display: block;
+        color: #fff;
+        font-size: 1.25rem;
+        margin-right: 2em;
+        cursor: pointer;
+    }
+
+    .title h1 {
+        font-size: 2.5rem;
+    }
 }
