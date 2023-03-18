@@ -1,12 +1,24 @@
 .container button {
     cursor: pointer;
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    margin: 0 8px;
+    font-size: 1rem;
+    margin: 0 0.5em;
     border: none;
     background: none;
 }
 
 .current {
     color: red;
+}
+
+@media screen and (max-width: 1023px) {
+    .container button {
+        font-size: 0.875rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container button {
+        font-size: 0.75rem;
+    }
 }

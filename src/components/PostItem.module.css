@@ -30,3 +30,41 @@
 .item img {
     width: 100%;
 }
+
+@media screen and (max-width: 1023px) {
+    .item {
+        margin: 1.875em 0;
+    }
+    
+    .title {
+        font-size: 2rem;
+    }
+    
+    .paragraph {
+        margin-top: 0.625em;
+        -webkit-line-clamp: 4;
+    }
+    
+    .division {
+        margin: 3.75em auto;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .item {
+        margin: 1.75em 0;
+    }
+    
+    .title {
+        font-size: 1.75rem;
+    }
+    
+    .paragraph {
+        margin-top: 0.5em;
+        -webkit-line-clamp: 3;
+    }
+    
+    .division {
+        margin: 3.5em auto;
+    }
+}
