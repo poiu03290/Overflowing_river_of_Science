@@ -12,16 +12,37 @@
     margin: 0 auto;
 }
 
-.nav-bar a {
+.name {
     font-size: 1.125rem;
     padding: 0 2em;
 }
 
-.nav-bar ul {
+.tmp ul {
     display: flex;
     flex-direction: row;
 }
 
-.nav-bar ul li a {
+.tmp ul li a {
     font-size: 0.75rem;
+    padding: 0 2em;
+}
+
+@media screen and (max-width: 1023px) {
+    .name {
+        font-size: 1rem;
+    }
+
+    .tmp ul li a {
+        font-size: 0.625rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .name {
+        display: none;
+    }
+
+    .tmp {
+        margin: 0 auto;
+    }
 }
