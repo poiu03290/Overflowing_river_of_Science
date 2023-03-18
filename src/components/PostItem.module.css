@@ -15,10 +15,12 @@
 .paragraph {
     margin-top: 0.75em;
     white-space: normal;
+    text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 5;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    font-size: 1.25rem;
 }
 
 .division {
@@ -42,7 +44,7 @@
     
     .paragraph {
         margin-top: 0.625em;
-        -webkit-line-clamp: 4;
+        font-size: 1.125rem;
     }
     
     .division {
@@ -61,7 +63,7 @@
     
     .paragraph {
         margin-top: 0.5em;
-        -webkit-line-clamp: 3;
+        font-size: 1rem;
     }
     
     .division {

@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import ReactMarkdown from 'react-markdown';
 
 import styles from './PostItem.module.css';
 
@@ -10,7 +9,7 @@ export const PostItem = ({ data }) => {
             <article className={styles.item}>
                 <h2 className={styles.title}>{data.fields.Title}</h2>
                 <img src={data.fields.Main_Image_URL} alt={'블로그 이미지'}/>
-                <ReactMarkdown children={data.fields.Post_Body} className={styles.paragraph} />
+                <p className={styles.paragraph}>{data.fields.Post_Body}</p>
                 <div className={styles.division}></div>
             </article>
         </Link>
