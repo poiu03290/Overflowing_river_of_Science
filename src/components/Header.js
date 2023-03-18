@@ -25,7 +25,7 @@ export const Header = () => {
             <nav className={`${styles['nav-bar']}`}>
                 <div className={styles.inner}>
                     <div className={scrollPosition < 600 ? undefined : styles.change}>
-                        <Link to={'/'}>Overflowing of river Science</Link>
+                        <Link to={'/'}>Overflowing river of Science</Link>
                     </div>
                     <div>
                         <ul className={scrollPosition < 600 ? undefined : styles.change}>
@@ -41,7 +41,7 @@ export const Header = () => {
                 </div>
             </nav>
             <div className={styles.title}>
-                <h1>Overflowing of river Science</h1>
+                <h1>Overflowing river of Science</h1>
                 <p>related to science in everyday life</p>
             </div>
             <HeaderBar show={show} setShow={setShow}/>

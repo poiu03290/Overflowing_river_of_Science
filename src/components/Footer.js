@@ -8,7 +8,7 @@ export const Footer = () => {
         <nav className={`${styles['nav-bar']}`}>
             <div className={styles.inner}>
                 <div className={styles.name}>
-                    <Link to={'/'}>Overflowing of river Science</Link>
+                    <Link to={'/'}>Overflowing river of Science</Link>
                 </div>
                 <div className={styles.tmp}>
                     <ul>
